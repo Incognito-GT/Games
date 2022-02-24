@@ -1,0 +1,21 @@
+import random as r
+def main():
+    card1 = r.randint(0,10)
+    card2 = r.randint(0,10)
+    card3 = r.randint(0,10)
+    card4 = r.randint(0,10)
+    card5 = r.randint(0,10)
+    print('You drew ' + str(card1+card2))
+    print('Do you want to stand or hit')
+    choice = input()
+    if choice == 'hit':
+        print("You got "+str(card1+card2+card3))
+        choice2 = input()
+    if choice == 'stand':
+        print('You choose to stand')
+    else:
+        print('Choose one action')
+
+
+if __name__ == '__main__':
+    main()
